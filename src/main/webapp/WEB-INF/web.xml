@@ -7,12 +7,33 @@
 
     <servlet>
         <servlet-name>HelloServlet</servlet-name>
-        <servlet-class>HelloServlet</servlet-class>
+        <servlet-class>Servlets.HelloServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
-        <url-pattern>/hw</url-pattern>
+        <url-pattern>/gen_user</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetUserServlet</servlet-name>
+        <servlet-class>Servlets.GetUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetUserServlet</servlet-name>
+        <url-pattern>/save_user</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DbLoader</servlet-name>
+        <servlet-class>Servlets.DataLoader</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DbLoader</servlet-name>
+        <url-pattern>/save_grid</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
